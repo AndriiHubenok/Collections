@@ -18,6 +18,12 @@ public class MyArrayList<E> {
     }
 
     public void remove(int index) {
+        try {
+            E element = myArrayList[index];
+        } catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("The index you have entered is invalid");
+            return;
+        }
         for(int i = index; i < myArrayList.length - 1; i++) {
             myArrayList[i] = myArrayList[i + 1];
         }
@@ -35,7 +41,12 @@ public class MyArrayList<E> {
     }
 
     public E get(int index) {
-        return myArrayList[index];
+        try {
+            return myArrayList[index];
+        } catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("The index you have entered is invalid");
+            return null;
+        }
     }
 
 

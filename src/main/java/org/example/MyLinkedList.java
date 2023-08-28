@@ -26,6 +26,10 @@ public class MyLinkedList<E> {
     }
 
     public void remove(int index) {
+        if(index >= length || index < 0) {
+            System.out.println("The index you have entered is invalid");
+            return;
+        }
         MyNode element = first;
         for(int i = 0; i < length; i++) {
             if(i == index) {
@@ -68,6 +72,10 @@ public class MyLinkedList<E> {
     }
 
     public E get(int index) {
+        if(index >= length || index < 0) {
+            System.out.println("The index you have entered is invalid");
+            return null;
+        }
         MyNode element = first;
         for(int i = 0; i < length; i++) {
             if(i == index) {

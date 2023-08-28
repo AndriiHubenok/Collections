@@ -13,6 +13,8 @@ public class Main {
         arrayList.add(60);
         System.out.println(arrayList.size());
         System.out.println(arrayList.get(0));
+        System.out.println(arrayList.get(10));
+        arrayList.remove(10);
         arrayList.remove(0);
         System.out.println(arrayList.get(0));
         arrayList.remove(3);
@@ -38,6 +40,8 @@ public class Main {
         linkedList.add(60);
         System.out.println(linkedList.size());
         System.out.println(linkedList.get(0));
+        System.out.println(linkedList.get(10));
+        linkedList.remove(10);
         linkedList.remove(0);
         System.out.println(linkedList.get(0));
         linkedList.remove(3);
